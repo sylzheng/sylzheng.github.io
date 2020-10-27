@@ -22,6 +22,18 @@ body {
   background-color: white;
 }
 
+a:link {
+  color: lightblue;
+}
+
+a:visited {
+  color: lavenderblush;
+}
+
+a:hover {
+  color: lightcyan; 
+}
+
 /******************************** BGs *******************************************/
 .darkbg {
   background-color: #47476b;
@@ -81,9 +93,15 @@ body {
 
 /******************************** END TOP NAV *************************************/
 
+.intro {
+  padding-top: 16px;
+  overflow: hidden;
+}
+
 .content {
-    padding-top: 16px;
+    padding-top: 30px;
     overflow: hidden;
+    display: flex;
 }
 
 .sticky {
@@ -92,7 +110,7 @@ body {
 	width: 100%
 }
 
-.sticky +.content {
+.sticky +.intro {
 	padding-top: 63px;
 }
 
@@ -112,29 +130,68 @@ P.blocktext_mid {
 /************* PROJ ****************/
 
 .project_container { 
-    padding: 30px;
+    margin-left: 12.5%;
+    margin-right:12.5%;
+    width: 75%;
+}
+
+.proj_item_wrap {
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 10px;  
+  display: flex;
 }
 
 .proj_main_img {
-    position: relative;    
-    max-width:100%; 
-    height:auto;
-    vertical-align: middle;
-    z-index:0;
     position: relative;
+    max-width: 100%;    
+    height:auto;
+    vertical-align: left;
+    z-index:0;
     border-radius: 5%;
     border-color: white;
     border-style: solid;
     border-width: 2 px;
+    top: -1%;
+    
 }
 
-.proj_item {
-     
+.proj_main_img_wrap {
+  vertical-align: left;
+  max-width: 40%;
+  position: relative;
+  padding: 1%;    
+  display: inline-block;
+}
+
+.proj_des {
+  display: inline-block;
+  height: auto;
+  text-align: left;
+  padding: 10px;
+  padding-bottom:20px;
+  font-family: system-ui;  
+}
+
+.proj_des .dates{
+  font-size: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.proj_pts {
+  font-size: 15px;
+  left: 10px;
 }
 
 /******************** EXP ****************/
 .exp_container { 
     padding: 30px;
+    margin-left: 12.5%;
+    margin-right:12.5%;
+    width: 75%;
 }
 
 

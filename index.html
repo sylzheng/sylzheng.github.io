@@ -22,63 +22,100 @@ html {
 
 <div id="navbar" class="topnav" >
 <ul style="list-style-type:none; padding: 0; margin: 0">
-    <a href="#home"> <li class="navtext">Home</li> </a>
+    <a href="#home"> <li class="navtext"> Home </li> </a>
+    <a href = "#about"><li class="navtext"> About Me </li> </a>
     <a href = "#projects"><li class="navtext"> Projects </li> </a>
     <a href = "#work"> Work Experience </a>
-    <a href = "./random">Random</a>
+    <a href = "./random"> Random </a>
 </ul>
 	
 </div>
 
 
 
-<div class="content" id="home">  
-	<h2 style="text-align:center; text-decoration: underline #0a657d; line-height: 100%;">
-        &#128522; Hi There! &#128522;
+<div class="intro" id="home">  
+	<h2 style="text-align:center; text-decoration: underline lightblue; line-height: 100%;">
+        Hi There! &#128522;
 	</h2>
 	
 	<div class="container-fluid background-white">
 	
 	<p style="padding:5px; text-align:center;"> 
 		My name is Sylvia.<br>I'm a 2nd year Electrical Engineering student.
-		<br>Wires are very cool.
-		<br>and so is Signal Processing.
+		<br>Wires are very cool and so are:
+    <ul style="margin-left: 43%">
+		<li> Signal Processing. </li>
+    <li> Software Engineering </li>
+    <li> Circuit Design </li>
+    </ul>
 	</p>
 	
 	</div>
 		
 </div>
 
-<hr style="width: 75%; height: 1px; background: linear-gradient(to left, #a3a3c2, lightblue); border-radius: 5%" />
+<hr style="width: 75%; height: 1px; background: linear-gradient(to left, #a3a3c2, lightblue); border-radius: 1px" id="projects"; />
+<hr style="width: 75%; height: 1px; background: linear-gradient(to left, #a3a3c2, lightblue); border-radius: 1px"; />
 
-<div class="content, darkbg"; id="projects";> 
+<div class="darkbg, content";> 
     <div class="project_container";> 
       <h2 style="text-align:center; "> engineering stuff that I've been a part of</h2>
-      <h4 style="text-align:center;"> Bruin Formula Racing </h4>
-      <div class="fpimg-wrap"> 
+      
+      <!-- <h4 style="text-align:center;"> Bruin Formula Racing </h4> -->
+      <div class="proj_item_wrap">
+      <div class="proj_main_img_wrap"> 
         <img src="img/bfr_pic.jpg" class = "proj_main_img", alt="Bruin Formula Racing">
+        </img>
       </div>
+        <div class= "proj_des">
+          <h4 style= "display: inline-block"> Bruin Formula Racing Electronics Subteam </h4>
 
-      <h4 style="text-align:center;"> IEEE Micromouse Project 2019-2020</h4>
-  <hr style="width:50%; background-color: white"> 
-    <h2 style="text-align:center;"> Participating in Hackathons!</h2>
-      <h4 style="text-align:center;"> Idea HACKS 2020</h4>
-      <p style="text-align:center;"> project: huMAN CAVE </p>
-      <h4 style="text-align:center;"> Hack on the Hill </h4>
-      <p style="text-align:center;"> project: catostraphy </p>
-      <h4 style="text-align:center;"> MakeUC </h4>
-      <p style="text-align:center;"> project: what's in my fridge? </p>
+          <div class="dates"> <i> Sep. 2018 - Present </i> <br/> </div> 
+          <div style="display:inline-block"> Electronics Manufacturing Lead </div>
+          <div class="dates" > <i> Sep. 2019 - Present </i> </div>
+          <hr style = "width: 75%; left: -10px">
+          <p> Bruin Formula Racing is a club/team that builds a Formula-style racecar that 
+              competes in a FSAE student design competition. <br/>
+              Read more at: <a href="https://www.bruinracing.com/formula/"> https://www.bruinracing.com/formula/ </a> </p>
+          <p> As a lead, I ... </p>
+            <ul class="proj_pts" style="margin: -10px">
+            <li> (am) Currently working on designing the dash display! (very exciting!) </li>
+            <li> Coordinate subteam meetings with other electronics lead </li>
+            <li> Take inventory of stock </li>
+            </ul>
+          <p> </br>As a general member, I have ... </p>
+            <ul class="proj_pts" style="margin: -10px">
+            <li> Designed a PCB (with KiCad) of a blown-fuse detecting circuit </li>
+            <li> Soldered wires </li>
+            </ul>
+        </div>
+      </div>
+      </br>
+      <div class="proj_item_wrap">
+        <div class="proj_des">
+        <h4 style= "display: inline-block"> IEEE Micromouse Project 2019-2020</h4>
+        <div class="dates"> <i> Sep. 2019 - Apr. 2020 </i> <br/> </div>
+        </div>
+      </div>
+    <hr style="width:50%; background-color: white"> 
+    <h2> Participating in Hackathons!</h2>
+      <h4> Idea HACKS 2020</h4>
+      <p> &ensp; project: huMAN CAVE </p>
+      <h4> Hack on the Hill </h4>
+      <p> &ensp; project: catostraphy </p>
+      <h4> MakeUC </h4>
+      <p> &ensp; project: what's in my fridge? </p>
     </div>
 </div>
 
 <div class="content"; id="work">
   <div class="exp_container";>
-    <h2 style="text-align:center;"> places i've worked </h2>
-    <h4 style="text-align:center;"> UCLA Engineering Transfer Center </h4>
-</div>
+    <h2> places i've worked </h2>
+    <h4> UCLA Engineering Transfer Center </h4>
+  </div>
 </div>
 <script src='scroll.js'></script>
-
+<script>history.scrollRestoration = "manual"</script>
 
 
 </body>
