@@ -36,8 +36,17 @@ a:hover {
 
 /******************************** BGs *******************************************/
 .darkbg {
-  background-color: #47476b;
+  background-color: #464661;  /* #364a61;*/
   color: white;
+}
+
+.projbg {
+  background-color: #5f5f82;/*#47476b;*/
+  color: white;  
+}
+
+.hackbg {
+  background-color: #726a85;
 }
 
 /******************************** START NAV *************************************/
@@ -97,7 +106,13 @@ a:hover {
 
 .intro {
   padding-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
   overflow: hidden;
+  min-width: 250px;
+  width: 25%;
+  
 }
 
 .content {
@@ -130,11 +145,18 @@ P.blocktext_mid {
     /* transform: translateX(+10%); */
 }
 
+.sectiontitle {
+  color: #d0eff5;
+  text-align: center;  
+  text-decoration: underline white;
+  
+}
+
 /************* PROJ ****************/
 
 .project_container { 
-    margin-left: 12.5%;
-    margin-right:12.5%;
+    margin-left: auto;
+    margin-right:auto;
     width: 75%;
     align-self: center;
     display: block;
@@ -145,7 +167,7 @@ P.blocktext_mid {
   border-style: solid;
   border-width: 1px;
   border-color: white;
-  border-radius: 15px;  
+  border-radius: 15px;
   display: grid;
   box-sizing: border-box;
   grid-column-gap: 5px;
@@ -177,7 +199,7 @@ P.blocktext_mid {
   height: auto;
   text-align: left;
   padding:5px;
-  margin-left: 5px;
+  margin-left: 10px;
   padding-bottom:20px;
   font-family: system-ui;
   overflow: hidden; 
@@ -188,6 +210,7 @@ P.blocktext_mid {
   padding-bottom: 1px;
   margin-bottom: 0px;
   display: inline-block;
+  color: lightblue;
 }
 
 .proj_des .dates{
@@ -237,6 +260,7 @@ P.blocktext_mid {
 
 .proj_des .liststart {
   margin-bottom: 0px;
+  color: #f0ccd8; /*#c2e7f0;*/
 }
 
 
@@ -253,10 +277,11 @@ P.blocktext_mid {
 
 /******************** EXP ****************/
 .exp_container { 
-    padding: 30px;
     margin-left: 12.5%;
     margin-right:12.5%;
     width: 75%;
+    align-self: center;
+    display: block;
 }
 
 
@@ -268,6 +293,16 @@ P.blocktext_mid {
   text-align:center;
 }
 */
+
+@media screen and (max-width: 500px) {
+  .project_container {
+    width: 95%;
+  }
+
+  .exp_container {
+    width: 95%;
+  }
+}
 
 /*************************** IMAGES ********************************/
 img {

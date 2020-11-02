@@ -26,7 +26,7 @@ html {
     <a href = "#about"><li class="navtext"> About Me </li> </a>
     <a href = "#projects"><li class="navtext"> Projects </li> </a>
     <a href = "#work"> Work Experience </a>
-    <a href = "./random"> Random </a>
+    <a href = "./random"> Random / For Fun  </a>
 </ul>
 	
 </div>
@@ -41,9 +41,9 @@ html {
 	<div class="container-fluid background-white">
 	
 	<p style="padding:5px; text-align:center;"> 
-		My name is Sylvia.<br>I'm a 2nd year Electrical Engineering student.
+		My name is Sylvia.<br>I'm a 3rd year Electrical Engineering student <br/> and avid Github user.
 		<br>Wires are very cool and so are:
-    <ul style="margin-left: 43%">
+    <ul style="padding-left: 25%">
 		<li> Signal Processing. </li>
     <li> Software Engineering </li>
     <li> Circuit Design </li>
@@ -54,15 +54,15 @@ html {
 		
 </div>
 
-<hr style="width: 80%; height: 0px; border-radius: 1px; margin-bottom: 0px;" id="projects"; />
-<hr style="width: 80%; height: 0px; border-radius: 1px; margin-top: 1px;"; />
+<hr style="width: 80%; background: white; height: 0px; border-radius: 1px; margin-bottom: 0px;" id="projects"; />
+<hr style="width: 80%; background: white; height: 0px; border-radius: 1px; margin-top: 1px;"; />
 
-<div class="darkbg, content";> 
-    <div class="project_container";> 
-      <h2 style="text-align:center; "> engineering stuff that I've been a part of</h2>
+<div class="darkbg content";> 
+    <div class="project_container"> 
+      <h2 class="sectiontitle"> engineering stuff that I've been a part of</h2>
       
       <!-- <h4 style="text-align:center;"> Bruin Formula Racing </h4> -->
-      <div class="proj_item_wrap">
+      <div class="proj_item_wrap projbg">
       <div class="proj_main_img_wrap" id="proj1_img"> 
         <img src="img/bfr_pic.jpg" class = "proj_main_img", alt="Bruin Formula Racing">
         </img>
@@ -92,7 +92,7 @@ html {
         </div>
       </div>
       </br>
-      <div class="projmm_item_wrap">
+      <div class="projmm_item_wrap projbg">
         <div class="proj_des">
         <h3 class="title"> UCLA IEEE Micromouse Project 2019-2020</h3>
         <div class="dates"> <i> Sep. 2019 - Apr. 2020 </i> <br/> </div>
@@ -131,21 +131,130 @@ html {
         </div>
       </div>
     <hr style="width:50%; background-color: white"> 
-    <h2> participating in hackathons</h2>
-      <h4> Idea HACKS 2020</h4>
-      <p> &ensp; project: huMAN CAVE </p>
-      <h4> Hack on the Hill </h4>
-      <p> &ensp; project: catostraphy </p>
-      <h4> MakeUC </h4>
-      <p> &ensp; project: what's in my fridge? </p>
-    </div>
+    <h2 class="sectiontitle" style="padding-top: 10px;"> participating in hackathons</h2>
+      <div class="projmm_item_wrap hackbg">
+        <div class="proj_des">
+        <h3 class="title"> what's in my fridge? <i> (MakeUC 2020) </i> </h3>
+        <div class="dates"> Oct. 2020 </div>
+        <hr style = "margin-right: 10%; width: 95%; height: 1px; background: white;">
+        
+        <p> This web app project was created with the idea of being able to take a photo of your receipt 
+             to keep track of the food that you have. So far, we have been able to upload a photo to the web app,
+             and get the parsed text that includes the items on the receipt. 
+             <br/> Read more at: <a href="https://devpost.com/software/what-s-in-my-fridge-c04qnl"> Devpost link </a>
+        </p>
+        
+        <p class="liststart"> My contributions: </p>
+          <ul class="proj_pts">
+            <li> Used ReactJS to build frontend for uploading the photo </li>
+            <li> Integrated ReactJS frontend and Flask backend </li>
+            <li> Modified my teammate's Python code to improve string parsing </li>
+           </ul>
+           
+        <p class="liststart"> Languages and Tools used: </p>
+          <ul class="proj_pts">
+            <li> Python </li>
+            <li> HTML, CSS, JS with ReactJS </li>
+            <li> Flask </li>
+            <li> Tesseract OCR </li>
+           </ul> 
+           
+        </div>
+      </div>
+      </br>
+      <div class="proj_item_wrap hackbg">
+        <div class="proj_img_wrap" style="width: 200px;">
+          <img src="img/catfp.png" class = "proj_main_img", alt="CATOSTRAPHY"></img>               
+        </div>
+        <div class="proj_des">
+        <h3 class="title"> CATostraphy <i> (Hack on the Hill 7) </i> </h3>
+        <div class="dates"> Feb. 2020 </div>
+        <hr style = "margin-right: 10%; width: 95%; height: 1px; background: white;">
+        
+        <p> Have you ever seen the movie "Cats"? Neither have I. BUT my friends and I decided
+            it would be fun to make use of React and OpenCV to add cat pictures on top of our faces
+            in pictures. (one of us also spelled "catastrophe" wrong hence the weird spelling)
+             <br/> See code here: <a href="https://github.com/olivialoh77/hoth-2020"> Github link </a>
+             <br/> (unfortunately i had not yet learned how to use Git for this project 
+                    so what I did is not under my name)
+        </p>
+        
+        <p class="liststart"> My contributions: </p>
+          <ul class="proj_pts">
+            <li> Wrote the HTML/CSS/JS code for the screen where you get to pick the picture that you want to cover your face </li>
+           </ul>
+           
+        <p class="liststart"> Languages and Tools used: </p>
+          <ul class="proj_pts">
+            <li> HTML, CSS, Javascript with React Native </li>
+           </ul> 
+           
+        </div>
+      </div>
+      <br/>
+      <div class="projmm_item_wrap hackbg">
+        <div class="proj_des">
+        <h3 class="title"> huMAN cave <i> (IdeaHACKS 2020) </i> </h3>
+        <div class="dates"> Jan. 2020 </div>
+        <hr style = "margin-right: 10%; width: 95%; height: 1px; background: white;">
+        
+        <p> With the theme being college lifestyle, my teammates and I decided to make an App-controlled automated 
+            privacy curtain/blinds + some extra stuff. 
+        </p>
+        
+        <p class="liststart"> My contributions: </p>
+          <ul class="proj_pts">
+            <li> Programmed an Arduino + LCD screen to make a digital clock. I also tacked on a numberpad for fun 
+                 (and also so we could change the time on it) </li>
+            <li> Assembled and soldered electronic parts </li>
+           </ul>
+           
+        <p class="liststart"> Skills and Hardware used: </p>
+          <ul class="proj_pts">
+            <li> C++ </li>
+            <li> Arduino </li>
+            <li> Soldering </li>
+           </ul>            
+        </div>
+        <div> </div>
+      </div>
+    <hr style="width:50%; background-color: white"> 
+    <h2 class="sectiontitle" style="padding-top: 10px;">course projects </h2> 
+    </div>   
 </div>
 
-<div class="content"; id="work">
+<hr style="width: 80%; background: white; height: 0px; border-radius: 1px; margin-bottom: 0px;" id="projects"; />
+<hr style="width: 80%; background: white; height: 0px; border-radius: 1px; margin-top: 1px;"; />
+
+<div class="content" id="work">
   <div class="exp_container";>
-    <h2> places i've worked </h2>
-    <h4> UCLA Engineering Transfer Center </h4>
-  </div>
+    <h2 class="sectiontitle"> places i've worked </h2>
+    
+      <div class="projmm_item_wrap hackbg">   
+        <div class="proj_des">
+          <h3 class="title"> UCLA Engineering Transfer Center <i> Undergraduate Mentor </i> </h3>
+        <div class="dates"> Jun. 2020 - Sep. 2020 </div>
+        <hr style = "margin-right: 10%; width: 95%; height: 1px; background: white;">
+        
+        <p> Undergraduate mentor for Transfer Bridge program that helps incoming transfer students. 
+            I collaborated with 10 other undergraduate mentors and 3 graduate student instructors.
+        </p>
+        <p class="liststart"> What I did at work: </p>
+          <ul class="proj_pts">
+            <li> Engaged transfer students during remote discussion sections and breakout rooms on C++ topics </li>
+            <li> Presented workshops on breadboarding, Arduino introduction, and ultrasonic sensors </li>
+            <li> Staffed office hours during remote hardware hackathon to help students check if parts were
+                  functioning and to help debug electronics/code problems </li>
+            <li> Organized a game night along with 3 other mentors for students to socialize with other students </li>
+           </ul>
+         </div>
+       </div>
+       </br>
+</div>
+</div>
+
+<div class="content">
+
 </div>
 <script src='scroll.js'></script>
 <script>history.scrollRestoration = "manual"</script>
