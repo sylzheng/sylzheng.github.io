@@ -89,6 +89,8 @@ a:hover {
     width: 100%;
     text-align: left;
   }
+  
+
 }
 
 /******************************** END TOP NAV *************************************/
@@ -102,6 +104,7 @@ a:hover {
     padding-top: 30px;
     overflow: hidden;
     display: flex;
+    flex-wrap:wrap;
 }
 
 .sticky {
@@ -133,6 +136,8 @@ P.blocktext_mid {
     margin-left: 12.5%;
     margin-right:12.5%;
     width: 75%;
+    align-self: center;
+    display: block;
 }
 
 .proj_item_wrap {
@@ -140,17 +145,27 @@ P.blocktext_mid {
   border-style: solid;
   border-width: 1px;
   border-color: white;
-  border-radius: 10px;  
-  display: flex;
+  border-radius: 15px;  
+  display: grid;
+  box-sizing: border-box;
+  grid-column-gap: 5px;
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+.content .proj_main_img_wrap {
+  align-self:center;
+  position: relative;
+  padding: 10px;
+    
 }
 
 .proj_main_img {
     position: relative;
-    max-width: 100%;    
+    max-width: 95%;    
     height:auto;
-    vertical-align: left;
     z-index:0;
-    border-radius: 5%;
+    border-radius: 15px;
     border-color: white;
     border-style: solid;
     border-width: 2 px;
@@ -158,33 +173,83 @@ P.blocktext_mid {
     
 }
 
-.proj_main_img_wrap {
-  vertical-align: left;
-  max-width: 40%;
-  position: relative;
-  padding: 1%;    
-  display: inline-block;
-}
-
 .proj_des {
-  display: inline-block;
   height: auto;
   text-align: left;
-  padding: 10px;
+  padding:5px;
+  margin-left: 5px;
   padding-bottom:20px;
-  font-family: system-ui;  
+  font-family: system-ui;
+  overflow: hidden; 
+  display: 
+}
+
+.proj_des .title {
+  padding-bottom: 1px;
+  margin-bottom: 0px;
+  display: inline-block;
 }
 
 .proj_des .dates{
   font-size: 10px;
   margin-left: 10px;
+  text-align: right;
   display: inline-block;
 }
 
-.proj_pts {
+
+.proj_des .proj_pts {
   font-size: 15px;
   left: 10px;
+  margin-left: -10px;
+  display: block;
+  margin-top: 1px;
 }
+
+.projmm_item_wrap {
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 15px;  
+  display: grid;
+  box-sizing: border-box;
+  grid-column-gap: 5px;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+}
+
+.projmm_img {
+  max-width: 95%;    
+  height:auto;
+  z-index:0;
+  border-radius: 15px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2 px;
+}
+
+.proj_img_wrap {
+  align-self:center;
+  position: relative;
+  padding: 10px;
+}
+
+.proj_des .liststart {
+  margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .proj_item_wrap {
+    grid-template-columns: 100%;
+  } 
+  
+  .projmm_item_wrap {
+    grid-template-columns: 100%;
+  }
+}
+
 
 /******************** EXP ****************/
 .exp_container { 

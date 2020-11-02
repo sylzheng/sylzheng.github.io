@@ -11,7 +11,7 @@ html {
 }
 </style>
 </head>
-<title>Sylvia!&#127875;</title>
+<title>Sylvia!&#127794 &#127775;</title>
 <link rel = "icon" href =  
 "https://i.imgur.com/0n5aqYk.jpg?1" 
         type = "image/x-icon">
@@ -54,8 +54,8 @@ html {
 		
 </div>
 
-<hr style="width: 75%; height: 1px; background: linear-gradient(to left, #a3a3c2, lightblue); border-radius: 1px" id="projects"; />
-<hr style="width: 75%; height: 1px; background: linear-gradient(to left, #a3a3c2, lightblue); border-radius: 1px"; />
+<hr style="width: 80%; height: 0px; border-radius: 1px; margin-bottom: 0px;" id="projects"; />
+<hr style="width: 80%; height: 0px; border-radius: 1px; margin-top: 1px;"; />
 
 <div class="darkbg, content";> 
     <div class="project_container";> 
@@ -63,42 +63,75 @@ html {
       
       <!-- <h4 style="text-align:center;"> Bruin Formula Racing </h4> -->
       <div class="proj_item_wrap">
-      <div class="proj_main_img_wrap"> 
+      <div class="proj_main_img_wrap" id="proj1_img"> 
         <img src="img/bfr_pic.jpg" class = "proj_main_img", alt="Bruin Formula Racing">
         </img>
       </div>
-        <div class= "proj_des">
-          <h4 style= "display: inline-block"> Bruin Formula Racing Electronics Subteam </h4>
-
-          <div class="dates"> <i> Sep. 2018 - Present </i> <br/> </div> 
-          <div style="display:inline-block"> Electronics Manufacturing Lead </div>
+        <div class= "proj_des" id="proj1_des">
+          <h3 class="title"> Bruin Formula Racing Electronics Subteam </h3>
+    
+          <div class="dates"> <i> Sep. 2018 - Present </i> <br/> </div>
+          <hr style = "margin-right: 10%; width: 95%; height: 1px; background: white;  ">          
+          <div style="display: inline-block"> Electronics Manufacturing Lead </div>
           <div class="dates" > <i> Sep. 2019 - Present </i> </div>
-          <hr style = "width: 75%; left: -10px">
+          <hr style = "margin-right: 70%; width: 30%; height: 0px; background: white; ">
           <p> Bruin Formula Racing is a club/team that builds a Formula-style racecar that 
-              competes in a FSAE student design competition. <br/>
+              competes in an FSAE student design competition. <br/>
               Read more at: <a href="https://www.bruinracing.com/formula/"> https://www.bruinracing.com/formula/ </a> </p>
-          <p> As a lead, I ... </p>
-            <ul class="proj_pts" style="margin: -10px">
-            <li> (am) Currently working on designing the dash display! (very exciting!) </li>
+          <p class="liststart" > As a lead, I ... </p>
+            <ul class="proj_pts">
+            <li> (am) Currently planning designing the dash display! (very exciting!) </li>
             <li> Coordinate subteam meetings with other electronics lead </li>
             <li> Take inventory of stock </li>
             </ul>
-          <p> </br>As a general member, I have ... </p>
-            <ul class="proj_pts" style="margin: -10px">
+          <p class="liststart"> As a general member, I have ... </p>
+            <ul class="proj_pts" >
             <li> Designed a PCB (with KiCad) of a blown-fuse detecting circuit </li>
             <li> Soldered wires </li>
             </ul>
         </div>
       </div>
       </br>
-      <div class="proj_item_wrap">
+      <div class="projmm_item_wrap">
         <div class="proj_des">
-        <h4 style= "display: inline-block"> IEEE Micromouse Project 2019-2020</h4>
+        <h3 class="title"> UCLA IEEE Micromouse Project 2019-2020</h3>
         <div class="dates"> <i> Sep. 2019 - Apr. 2020 </i> <br/> </div>
+        <hr style = "margin-right: 10%; width: 95%; height: 1px; background: white;">
+        
+        <p> I worked with 2 other people to design, assemble, and program a robot "rat" that solves
+            mazes. <br/> 
+            Read more at: <a href="http://ieeebruins.com/projects"> http://ieeebruins.com/projects </a> </p>
+        <p class="liststart"> My contributions: </p>
+          <ul class="proj_pts">
+            <li> Designed PCB using Autodesk EAGLE </li>
+            <li> Programmed mouse turning and movement in C++, making use of proportional and derivative controller concepts </li>
+            <li> Programmed flood-fill maze solving algorithm using C++ </li>
+           </ul>
+        <p class="liststart"> Hardware used: </p>
+          <ul class="proj_pts">
+            <li> STM32 F4-series MCU </li>
+            <li> IR sensors </li>
+            <li> H-Bridge </li>
+            <li> Motors </li>
+           </ul>
+        <p class="liststart"> Languages: </p>
+          <ul class="proj_pts">
+            <li> C++ </li>
+            <li> C (for beginning of project, not used in latest iteration) </li>
+           </ul>        
+        
+        </div>
+        <div>
+        <div class="proj_img_wrap">
+          <img src="img/mm_sch.png" class = "proj_main_img", alt="Micromouse Schematic"></img>               
+        </div>
+        <div class="proj_img_wrap" style="padding-top: 0px">
+          <img src="img/mm_brd.png" class = "proj_main_img", alt="Micromouse Board" ></img>                
+        </div>
         </div>
       </div>
     <hr style="width:50%; background-color: white"> 
-    <h2> Participating in Hackathons!</h2>
+    <h2> participating in hackathons</h2>
       <h4> Idea HACKS 2020</h4>
       <p> &ensp; project: huMAN CAVE </p>
       <h4> Hack on the Hill </h4>
